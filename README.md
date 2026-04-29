@@ -63,6 +63,10 @@ Un script Bash est fourni pour reproduire automatiquement le scénario de panne 
 chmod +x simulation_q6.sh
 ./simulation_q6.sh
 ---
+### 🧪 Simulation automatisée (Question 7 - Cohérence par Quorum)
+```bash
+chmod +x simulation_q7.sh
+./simulation_q7.sh
 
 ## 📐 Théorème CAP illustré
 
