@@ -36,6 +36,9 @@ Build a simple distributed replication prototype using RabbitMQ. A client writes
 - Q6: Stop `Replica 2`, write lines, restart; files diverge then reconcile.
 - Q7: `ClientReaderV2App` gathers all lines and outputs majority consensus.
 
+## Extra Feature
+- Line format validation: replicas reject malformed lines (must start with a number then text).
+
 ## Run (simple)
 Build:
 ```
@@ -63,6 +66,7 @@ Read all + majority:
 ```
 java -cp tp3_solution/target/tp3_solution-1.0-SNAPSHOT-jar-with-dependencies.jar com.tp3.ClientReaderV2App
 ```
+
 
 ## CAP Mapping (short)
 - `ClientReaderApp`: favors Availability (AP) by accepting first response.

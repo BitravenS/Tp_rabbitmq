@@ -41,6 +41,7 @@ public class ReplicaService {
         channel.queueDeclare(readAllQueue, true, false, false, null);
         channel.queueBind(readAllQueue, QueueNames.READ_ALL_EXCHANGE, "");
 
+
         channel.queueDeclare(QueueNames.READ_LAST_RESPONSE_QUEUE, true, false, false, null);
         channel.queueDeclare(QueueNames.READ_ALL_RESPONSE_QUEUE, true, false, false, null);
 
@@ -51,7 +52,7 @@ public class ReplicaService {
                 channel.basicAck(delivery.getEnvelope().getDeliveryTag(), false);
                 System.out.println("[✓] Replica " + replicaId + " wrote: " + message.trim());
             } catch (IOException e) {
-                System.err.println("[!] Replica " + replicaId + " write failed: " + e.getMessage());
+                System.err.println("[!] Replica " + replicaId + " write failed: " + e.getMessage() + " | payload='" + message.trim() + "'");
                 channel.basicNack(delivery.getEnvelope().getDeliveryTag(), false, true);
             }
         };
