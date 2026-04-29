@@ -1,0 +1,9 @@
+/mnt/storage/jwa7/Sem2/rabbitmq/tp3_solution/src/main/java/com/tp3/ClientReaderApp.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp3_solution/src/main/java/com/tp3/ClientReaderV2App.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp3_solution/src/main/java/com/tp3/ClientWriterApp.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp3_solution/src/main/java/com/tp3/QueueNames.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp3_solution/src/main/java/com/tp3/RabbitConfig.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp3_solution/src/main/java/com/tp3/RabbitConnectionFactory.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp3_solution/src/main/java/com/tp3/ReplicaApp.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp3_solution/src/main/java/com/tp3/ReplicaService.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp3_solution/src/main/java/com/tp3/TextFileRepository.java

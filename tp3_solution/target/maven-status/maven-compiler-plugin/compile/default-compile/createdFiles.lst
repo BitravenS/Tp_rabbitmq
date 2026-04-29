@@ -1,0 +1,9 @@
+com/tp3/RabbitConnectionFactory.class
+com/tp3/TextFileRepository.class
+com/tp3/QueueNames.class
+com/tp3/ReplicaService.class
+com/tp3/RabbitConfig.class
+com/tp3/ReplicaApp.class
+com/tp3/ClientReaderApp.class
+com/tp3/ClientWriterApp.class
+com/tp3/ClientReaderV2App.class
