@@ -1,0 +1,14 @@
+/mnt/storage/jwa7/Sem2/rabbitmq/tp2_solution/src/main/java/com/sync/BranchSeederApp.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp2_solution/src/main/java/com/sync/BranchSenderApp.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp2_solution/src/main/java/com/sync/DbConfig.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp2_solution/src/main/java/com/sync/DbConnectionFactory.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp2_solution/src/main/java/com/sync/DbSchema.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp2_solution/src/main/java/com/sync/HqReceiverApp.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp2_solution/src/main/java/com/sync/ProductSales.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp2_solution/src/main/java/com/sync/RabbitConfig.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp2_solution/src/main/java/com/sync/RabbitConnectionFactory.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp2_solution/src/main/java/com/sync/SalesConsumer.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp2_solution/src/main/java/com/sync/SalesCsvParser.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp2_solution/src/main/java/com/sync/SalesMessage.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp2_solution/src/main/java/com/sync/SalesPublisher.java
+/mnt/storage/jwa7/Sem2/rabbitmq/tp2_solution/src/main/java/com/sync/SalesRepository.java
