@@ -5,7 +5,7 @@ import java.util.List;
 public class BranchSenderApp {
     public static void main(String[] args) throws Exception {
         if (args.length < 8) {
-            System.out.println("Usage: BranchSenderApp <branchId> <dbUrl> <dbUser> <dbPass> <rabbitHost> <rabbitPort> <rabbitUser> <rabbitPass>");
+            System.out.println("Usage: BranchSenderApp <branchId> <dbUrl> <dbUser> <dbPass> <rabbitHost> <rabbitPort> <rabbitUser> <rabbitPass> [--dry-run]");
             return;
         }
 
@@ -17,6 +17,7 @@ public class BranchSenderApp {
         int rabbitPort = Integer.parseInt(args[5]);
         String rabbitUser = args[6];
         String rabbitPass = args[7];
+        boolean dryRun = args.length > 8 && "--dry-run".equalsIgnoreCase(args[8]);
 
         DbConfig dbConfig = new DbConfig(dbUrl, dbUser, dbPass);
         DbConnectionFactory dbFactory = new DbConnectionFactory(dbConfig);
@@ -28,6 +29,14 @@ public class BranchSenderApp {
         }
         if (sales.isEmpty()) {
             System.out.println("No sales found in branch database for branch: " + branchId);
+            return;
+        }
+
+        if (dryRun) {
+            System.out.println("Dry run: would publish " + sales.size() + " sales from branch " + branchId);
+            for (int i = 0; i < Math.min(3, sales.size()); i++) {
+                System.out.println("  " + sales.get(i));
+            }
             return;
         }
 

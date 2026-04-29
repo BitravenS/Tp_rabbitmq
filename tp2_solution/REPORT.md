@@ -71,6 +71,7 @@ Table `product_sales` (created by `DbSchema.ensureSalesTable`):
 - `BranchSenderApp`
   - Reads all sales for one branch from its BO DB.
   - Sends them to RabbitMQ as a `SalesMessage`.
+  - Optional `--dry-run` prints a summary without publishing.
 
 - `HqReceiverApp`
   - Runs at HO.
@@ -120,6 +121,12 @@ java -cp tp2_solution/target/db-sync-rabbitmq-1.0-SNAPSHOT-jar-with-dependencies
 
 java -cp tp2_solution/target/db-sync-rabbitmq-1.0-SNAPSHOT-jar-with-dependencies.jar \
   com.sync.BranchSenderApp BO2 jdbc:mysql://localhost:3306/bo2db user pass localhost 5672 rabbituser rabbitpass
+```
+
+Dry run example:
+```
+java -cp tp2_solution/target/db-sync-rabbitmq-1.0-SNAPSHOT-jar-with-dependencies.jar \
+  com.sync.BranchSenderApp BO1 jdbc:mysql://localhost:3306/bo1db user pass localhost 5672 rabbituser rabbitpass --dry-run
 ```
 
 ## Notes for the Report
